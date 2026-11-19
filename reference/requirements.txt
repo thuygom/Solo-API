@@ -1,0 +1,2 @@
+# Only solo/mcpio.py and tests/test_mcp.py need this. Everything else is standard library (Python 3.11+).
+mcp==2.3.0

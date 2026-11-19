@@ -1,0 +1,21 @@
+[build-system]
+requires = ["setuptools>=69"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "solo-api"
+version = "0.1.0"
+description = "Reference kernel for Solo-API: a fixed SQL mapper, intent-level tools, a job contract and an optional MCP adapter"
+readme = "README.md"
+urls = { Homepage = "https://github.com/thuygom/Solo-API" }
+requires-python = ">=3.11"
+license = "Apache-2.0"
+license-files = ["LICENSE", "NOTICE"]
+authors = [{ name = "thuygom" }]
+dependencies = []
+
+[project.optional-dependencies]
+mcp = ["mcp==2.3.0"]
+
+[tool.setuptools]
+packages = ["solo"]
